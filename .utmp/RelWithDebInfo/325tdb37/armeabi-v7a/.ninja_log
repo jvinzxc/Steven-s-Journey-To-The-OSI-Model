@@ -1,0 +1,33 @@
+# ninja log v5
+0	169	7198581460487242	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	8d0fe504f1079542
+171	403	7198581462321735	A:/Unity/Capstone 2023/Steven's Journey To The OSI Model/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/325tdb37/obj/armeabi-v7a/libswappywrapper.so	622832d794dab541
+2	194	7206850456159661	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	8d0fe504f1079542
+194	640	7206850460187026	A:/Unity/Capstone 2023/Steven's Journey To The OSI Model/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/325tdb37/obj/armeabi-v7a/libswappywrapper.so	622832d794dab541
+4	212	7207266883557432	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	8d0fe504f1079542
+213	629	7207266886488585	A:/Unity/Capstone 2023/Steven's Journey To The OSI Model/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/325tdb37/obj/armeabi-v7a/libswappywrapper.so	622832d794dab541
+2	150	7207275197019375	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	8d0fe504f1079542
+150	299	7207275198011653	A:/Unity/Capstone 2023/Steven's Journey To The OSI Model/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/325tdb37/obj/armeabi-v7a/libswappywrapper.so	622832d794dab541
+2	190	7207286071951497	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	8d0fe504f1079542
+190	378	7207286073324178	A:/Unity/Capstone 2023/Steven's Journey To The OSI Model/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/325tdb37/obj/armeabi-v7a/libswappywrapper.so	622832d794dab541
+2	184	7207298169805793	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	8d0fe504f1079542
+184	578	7207298173174703	A:/Unity/Capstone 2023/Steven's Journey To The OSI Model/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/325tdb37/obj/armeabi-v7a/libswappywrapper.so	622832d794dab541
+2	162	7207304667085148	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	8d0fe504f1079542
+162	325	7207304668185195	A:/Unity/Capstone 2023/Steven's Journey To The OSI Model/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/325tdb37/obj/armeabi-v7a/libswappywrapper.so	622832d794dab541
+2	176	7207308036435583	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	8d0fe504f1079542
+177	360	7207308037703003	A:/Unity/Capstone 2023/Steven's Journey To The OSI Model/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/325tdb37/obj/armeabi-v7a/libswappywrapper.so	622832d794dab541
+3	417	7208664616157651	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	8d0fe504f1079542
+417	1002	7208664620281216	A:/Unity/Capstone 2023/Steven's Journey To The OSI Model/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/325tdb37/obj/armeabi-v7a/libswappywrapper.so	622832d794dab541
+1	154	7208670628368536	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	8d0fe504f1079542
+154	316	7208670629481245	A:/Unity/Capstone 2023/Steven's Journey To The OSI Model/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/325tdb37/obj/armeabi-v7a/libswappywrapper.so	622832d794dab541
+2	154	7208676206620095	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	8d0fe504f1079542
+154	313	7208676207729701	A:/Unity/Capstone 2023/Steven's Journey To The OSI Model/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/325tdb37/obj/armeabi-v7a/libswappywrapper.so	622832d794dab541
+2	149	7208682617732128	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	8d0fe504f1079542
+150	306	7208682618820987	A:/Unity/Capstone 2023/Steven's Journey To The OSI Model/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/325tdb37/obj/armeabi-v7a/libswappywrapper.so	622832d794dab541
+2	154	7208687673731545	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	8d0fe504f1079542
+154	313	7208687674839574	A:/Unity/Capstone 2023/Steven's Journey To The OSI Model/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/325tdb37/obj/armeabi-v7a/libswappywrapper.so	622832d794dab541
+2	191	7208703035009918	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	8d0fe504f1079542
+192	560	7208703038158555	A:/Unity/Capstone 2023/Steven's Journey To The OSI Model/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/325tdb37/obj/armeabi-v7a/libswappywrapper.so	622832d794dab541
+2	172	7208713376533681	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	8d0fe504f1079542
+173	542	7208713379507564	A:/Unity/Capstone 2023/Steven's Journey To The OSI Model/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/325tdb37/obj/armeabi-v7a/libswappywrapper.so	622832d794dab541
+2	204	7208717126836296	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	8d0fe504f1079542
+204	397	7208717128203956	A:/Unity/Capstone 2023/Steven's Journey To The OSI Model/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/325tdb37/obj/armeabi-v7a/libswappywrapper.so	622832d794dab541
