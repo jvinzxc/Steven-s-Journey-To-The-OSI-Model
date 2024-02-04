@@ -1912,6 +1912,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LoadingAsync
       objectReference: {fileID: 0}
+    - target: {fileID: 5778039296903787757, guid: dd0fbf0581973ee4bb6619d9e6185972, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8181457683318211867, guid: dd0fbf0581973ee4bb6619d9e6185972, type: 3}
       propertyPath: m_LocalPosition.x
       value: 798.3165
