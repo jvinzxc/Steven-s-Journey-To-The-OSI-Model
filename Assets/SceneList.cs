@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-using System.Linq;
 using TMPro;
 
 
@@ -32,7 +31,7 @@ public class SceneList : MonoBehaviour
             {
                 loadingText.text = "Loading... 100%";
                 asyncLoad.allowSceneActivation = true;
-                
+            
             }
             else
             {
