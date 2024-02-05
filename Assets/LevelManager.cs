@@ -8,7 +8,6 @@ public class LevelManager : MonoBehaviour
 {
     int levelsUnlocked;
     public Button[] buttons;
-
     
     void Start()
     {
@@ -17,7 +16,6 @@ public class LevelManager : MonoBehaviour
         for(int i=0; i <buttons.Length; i++)
         {
             buttons[i].interactable = false;
-
         }
 
         for(int i = 0; i < levelsUnlocked; i++)

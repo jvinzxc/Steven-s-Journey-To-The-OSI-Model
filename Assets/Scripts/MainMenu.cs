@@ -6,10 +6,11 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-    
+
     public void PlayGame()
     {
-        //PlayerPrefs mo lagay ka
+        string sceneName = "House";
+        PlayerPrefs.SetString("SceneName", sceneName);
         SceneManager.LoadScene("LoadingScene");
     }
     public void QuitGame()

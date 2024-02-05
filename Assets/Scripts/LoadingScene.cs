@@ -7,19 +7,24 @@ public class LoadingScene : MonoBehaviour
 {
     public GameObject loadingScreen;
     public Slider slider;
+
     
-    public void LoadLevel (int sceneIndex)
+    private void Start()
     {
-        StartCoroutine(LoadAsync(sceneIndex));
+        StartCoroutine(LoadAsync());
     }
 
-    IEnumerator LoadAsync(int sceneIndex)
+    private IEnumerator LoadAsync()
     {
         slider.value = 0;
         loadingScreen.SetActive(true);
-        AsyncOperation operation = SceneManager.LoadSceneAsync(sceneIndex);
+        
+        string sceneName = PlayerPrefs.GetString("sceneName");
+
+        AsyncOperation operation = SceneManager.LoadSceneAsync(sceneName);
         operation.allowSceneActivation = false;
         float progress = 0;
+
         while (!operation.isDone)
         {
             progress = Mathf.MoveTowards(progress, operation.progress, Time.deltaTime);
