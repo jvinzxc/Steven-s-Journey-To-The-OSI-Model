@@ -19,4 +19,11 @@ public class MainMenu : MonoBehaviour
         Application.Quit();
         
     }
+
+    public void LevelLoader()
+    {
+        string sceneName = "LevelChoices";
+        PlayerPrefs.SetString("LevelChoices", sceneName);
+        SceneManager.LoadScene("LoadingScene");
+    }
 }
