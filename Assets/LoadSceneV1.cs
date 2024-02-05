@@ -8,10 +8,17 @@ using UnityEditor.SceneManagement;
 
 public class LoadSceneV1 : MonoBehaviour
 {
+    public TextMeshProUGUI loadingText;
+
+    private void Start(){
+        StartCoroutine(LoadSceneAsync());
+    }
+    /* Ginawa ko munang comment
     public GameObject loadingScene;
     public Slider slider;
     public TMP_Text text;
     private Scene prevScene;
+
     public void Start()
     {
        Scene prevScene = SceneManager.GetActiveScene();
@@ -35,17 +42,25 @@ public class LoadSceneV1 : MonoBehaviour
     public void LoadScene(int sceneId)
     {
         StartCoroutine(loadsceneAsync(sceneId));
-    }
-    IEnumerator loadsceneAsync(int sceneId)
+    }*/
+    private IEnumerator LoadSceneAsync()
     {
-        AsyncOperation operation = SceneManager.LoadSceneAsync(sceneId);
+        //AsyncOperation operation = SceneManager.LoadSceneAsync(sceneId);
+        /*Pwede mo to gamitin pag ipapasa mo ung scene name, for example Level 1, Level 2(Ayusin mo sa stage choices ung logic, Sa ngayon fix ko muna)
+        string sceneName = PlayerPrefs.GetString("SceneName"); //Pede ka gumamit ng PlayerPrefs na nagpapalit("Level1", "Level2" etc..) kada ibang stage pinipindot
+        operation = SceneManager.LoadSceneAsync(sceneName);*/
 
-        loadingScene.SetActive(true);
+
+        //House muna siya for now, para makita natin if working
+        AsyncOperation operation = SceneManager.LoadSceneAsync("House");
+
+        operation.allowSceneActivation = false;
+
         while (!operation.isDone)
         {
-            if (operation.progress <= 0.9f)
+            if (operation.progress >= 0.9f)
             {
-                text.text = "Loading " + Mathf.FloorToInt(operation.progress * 100) + "%";
+                loadingText.text = "Loading " + Mathf.FloorToInt(operation.progress * 100) + "%";
                 yield return new WaitForSeconds(6f);
 
                 operation.allowSceneActivation = true;
@@ -53,11 +68,11 @@ public class LoadSceneV1 : MonoBehaviour
             }
             else
             {
-                text.text = "Loading " + Mathf.FloorToInt(operation.progress * 100) + "%";
+                loadingText.text = "Loading " + Mathf.FloorToInt(operation.progress * 100) + "%";
             }
 
-            float progressValue = Mathf.Clamp01(operation.progress / 0.9f);
-            slider.value = progressValue;
+            //float progressValue = Mathf.Clamp01(operation.progress / 0.9f);
+            //slider.value = progressValue;
 
             yield return null;
         }
