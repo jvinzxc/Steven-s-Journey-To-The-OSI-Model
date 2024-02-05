@@ -9,6 +9,7 @@ using UnityEditor.SceneManagement;
 public class LoadSceneV1 : MonoBehaviour
 {
     public TextMeshProUGUI loadingText;
+    public Scene menu;
 
     private void Start(){
         StartCoroutine(LoadSceneAsync());
