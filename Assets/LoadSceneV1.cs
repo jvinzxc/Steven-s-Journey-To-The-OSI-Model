@@ -38,7 +38,7 @@ public class LoadSceneV1 : MonoBehaviour
            {
                 
                 //pagexperimentuhan mo
-                loadingText.text = "Loading " + Mathf.FloorToInt(operation.progress * 100) + "%";
+                loadingText.text = "Loading " + Mathf.FloorToInt(slider.value * 100) + "%";
         
 
                 yield return new WaitForSeconds(3f);
