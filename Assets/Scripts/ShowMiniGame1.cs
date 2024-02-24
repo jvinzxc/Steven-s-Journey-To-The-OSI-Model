@@ -9,16 +9,12 @@ public class ShowMiniGame1 : MonoBehaviour
     public GameObject prevCam;
     public GameObject nextCam;
     public GameObject joystick;
-    public GameObject openMission;
-    public GameObject closeMission;
     public GameObject wiremark;
     public void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
         {
             joystick.SetActive(false);
-            openMission.SetActive(false);
-            closeMission.SetActive(false);
             prevCam.SetActive(false);
             wiremark.SetActive(false);
             nextLev.SetActive(true);

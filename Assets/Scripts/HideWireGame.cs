@@ -14,6 +14,7 @@ public class HideWireGame : MonoBehaviour
     public GameObject obj5cam;
     public GameObject obj6cam;
     public GameObject obj7jstick;
+    public GameObject done;
     public void Start()
     {
         if (main.activeInHierarchy)
@@ -25,6 +26,7 @@ public class HideWireGame : MonoBehaviour
             obj5cam.SetActive(false);
             obj6cam.SetActive(true);
             obj7jstick.SetActive(true);
+            done.SetActive(true);
         }
     }
 }

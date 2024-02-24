@@ -23,7 +23,8 @@ public class QuestionManager : MonoBehaviour
     int totalQuestion;
     public int score;
     public Text retryText;
- 
+
+    
     public void Start()
     {
        
@@ -49,6 +50,9 @@ public class QuestionManager : MonoBehaviour
             scoreText.text = score + "/" + totalQuestion;
             retryText.text = "Back";
             StartCoroutine(myCoroutine());
+
+            string quizDone = "done";
+            PlayerPrefs.SetString("done", quizDone);
             
            
         }

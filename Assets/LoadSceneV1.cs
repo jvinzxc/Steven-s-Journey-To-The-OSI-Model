@@ -24,7 +24,6 @@ public class LoadSceneV1 : MonoBehaviour
     {
         AsyncOperation operation;
         string sceneName = PlayerPrefs.GetString("SceneName"); 
-
         operation = SceneManager.LoadSceneAsync(sceneName);
         operation.allowSceneActivation = false;
 

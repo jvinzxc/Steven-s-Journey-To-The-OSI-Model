@@ -55,9 +55,4 @@ public class LevelManager : MonoBehaviour
         int level = PlayerPrefs.GetInt("levelsUnlocked", 0);
         text.text = "current Level is " + level + " !!! ";
     }
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
