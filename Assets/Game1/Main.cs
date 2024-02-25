@@ -16,6 +16,7 @@ public class Main : MonoBehaviour
     public GameObject activator;
     public GameObject bM;
     public GameObject sM;
+    public GameObject check;
     private int onCount = 0;
     
     private void Awake()
@@ -36,6 +37,8 @@ public class Main : MonoBehaviour
             activator.SetActive(true);
             bM.SetActive(true);
             sM.SetActive(true);
+
+            check.SetActive(true);
            
         }
     }

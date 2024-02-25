@@ -6,6 +6,7 @@ using UnityEngine.UIElements;
 using UnityEngine.SceneManagement;
 using UnityEngine.Assertions.Must;
 using Unity.VisualScripting;
+using TMPro;
 
 public class QuestionManager : MonoBehaviour
 {
@@ -13,54 +14,57 @@ public class QuestionManager : MonoBehaviour
     public GameObject[] options;
     public int currentQuestions;
     public Text questionText;
-    public Text scoreText;
     public GameObject questionPanel;
-    public GameObject goPanel;
-    public GameObject goPanel2;
-    public GameObject goPanel2Text;
-    public GameObject jstick;
-    public Text gpText2;
     int totalQuestion;
-    public int score;
-    public Text retryText;
+    public int score = 0;
 
+    public GameObject quiz1;
+    public GameObject quizRetry;
+    public TMP_Text playerScore1;
+    public TMP_Text playerScore2;
+    public TMP_Text messageDone1;
+    public TMP_Text messageDone2;
+
+    
     
     public void Start()
     {
        
         QuestionManager questionManager= this;
         totalQuestion = qna.Count;
-        goPanel.SetActive(false);
+        quiz1.SetActive(false);
         genQuestion();    
 
     }
    
     public void retry()
     {
-        SceneManager.UnloadSceneAsync(4);
+        SceneManager.UnloadSceneAsync("Quiz");
+        SceneManager.LoadSceneAsync("Quiz", LoadSceneMode.Additive);
 
     }
-    
     public void GameOver()
     {
         if (score == 10)
         {
             questionPanel.SetActive(false);
-            goPanel.SetActive(true);
-            scoreText.text = score + "/" + totalQuestion;
-            retryText.text = "Back";
+            quiz1.SetActive(true);
+            playerScore1.text = score + "/" + totalQuestion;
+            messageDone1.text = "Back";
             StartCoroutine(myCoroutine());
-
             string quizDone = "done";
             PlayerPrefs.SetString("done", quizDone);
+            PlayerPrefs.SetInt("score", score);
+            SceneManager.UnloadSceneAsync("Quiz");
             
-           
+
+
         }
         else
         {
             questionPanel.SetActive(false);
-            goPanel2.SetActive(true);
-            gpText2.text = score + "/" + totalQuestion;
+            quizRetry.SetActive(true);
+            messageDone2.text = score + "/" + totalQuestion;
             StartCoroutine(myCoroutine());
             
         }

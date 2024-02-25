@@ -38,7 +38,7 @@ public class MainMenu : MonoBehaviour
     {
         string sceneName = "Quiz";
         PlayerPrefs.SetString("SceneName", sceneName);
-        SceneManager.LoadSceneAsync("LoadingScene");
+        SceneManager.LoadSceneAsync("Quiz", LoadSceneMode.Additive);
     }
     public void Level1QuizDone()
     {

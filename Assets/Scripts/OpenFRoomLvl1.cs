@@ -9,38 +9,31 @@ public class OpenFRoomLvl1 : MonoBehaviour
     public GameObject door3;
     public GameObject miniGamePanel;
     public GameObject check;
+    public GameObject asd;
     public GameObject quizGameTrigger;
-    private bool activated;
+   
     public void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
         {
-            if (door3.activeInHierarchy)
+            miniGamePanel.SetActive(true);
+
+            if (check.active)
             {
-                activated = true;
+                asd.SetActive(true);
+
+                if (asd.activeInHierarchy)
+                {
+                    door1.SetActive(false);
+                    door2.SetActive(false);
+                    door3.SetActive(false);
+                    quizGameTrigger.SetActive(false);
+                }
             }
             else
             {
-                door1.SetActive(false);
-                door2.SetActive(false);
-                miniGamePanel.SetActive(true);
-                check.SetActive(true);
-                activated = false;
-            }
-            
-                
-        }
-    }
-
-    public void Activated()
-    {
-        if (activated == false)
-        {
-            quizGameTrigger.SetActive(false);
-        }
-        else
-        {
-            quizGameTrigger.SetActive(true);
-        }
-    }
+                quizGameTrigger.SetActive(true);
+            }    
+        }       
+    }   
 }

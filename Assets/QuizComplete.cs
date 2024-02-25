@@ -4,20 +4,59 @@ using UnityEngine;
 
 public class QuizComplete : MonoBehaviour
 {
-    public GameObject door;
-    public GameObject doortrigger;
+    public GameObject doorBlock;
+    public GameObject door2;
+    public GameObject doorTrigger;
     public GameObject panel;
-    
+    public GameObject asd;
+    public GameObject check;
+
+    public void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            panel.SetActive(true); 
+            int score = PlayerPrefs.GetInt("score");
+            if (score == 10)
+            {
+                check.SetActive(true);
+
+                if (check.active)
+                {
+                    asd.SetActive(true);
+
+                    if (asd.activeInHierarchy)
+                    {
+                        doorBlock.SetActive(false);
+                        door2.SetActive(false);
+                        doorTrigger.SetActive(false);
+                    }
+                }
+                else
+                {
+                    doorTrigger.SetActive(true);
+                }
+            }
+            
+        }
+    }
     public void IDK()
     {
-        string quiz = PlayerPrefs.GetString("done");
-
-        if (quiz == "done")
-        {
-            door.SetActive(false);
-            doortrigger.SetActive(false);
-            panel.SetActive(true);
-        }
-
+        string done = PlayerPrefs.GetString("mgc");
+        if (done == "mgc")
+            {
+                doorBlock.SetActive(false);
+                door2.SetActive(false);
+                doorTrigger.SetActive(false);
+                panel.SetActive(true);
+            }
+            else
+            {
+                doorTrigger.SetActive(true);
+                panel.SetActive(false);
+                doorBlock.SetActive(true);
+                door2.SetActive(true);
+            }
+        
     }
 }
