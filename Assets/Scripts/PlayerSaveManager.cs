@@ -7,8 +7,6 @@ public class PlayerSaveManager : MonoBehaviour
 {
     public SavePlayer playerData;
     public Transform player;
-    private Vector3 playerPosition;
-    private Quaternion playerRotation;
 
     //bool for loading the data once.
     private bool playerDataLoaded = false;
@@ -20,19 +18,22 @@ public class PlayerSaveManager : MonoBehaviour
         {
             LoadPlayerData();
             playerDataLoaded = true;
-
+            
         }
         else
         {
             Debug.Log("File not found!");
+            SaveNewPlayerData();
         }
     }
     void Start()
     {
-        if (SceneManager.GetActiveScene().name == "Menu")
+        if (SceneManager.GetActiveScene().name == "Level 1")
         {
             InvokeRepeating("SavePlayerData", 0f, 1f);
+            Debug.Log("asdasdasds");
         }
+        
     }
 
     public void SaveNewPlayerData()

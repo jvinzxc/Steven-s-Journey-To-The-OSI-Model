@@ -1703,6 +1703,18 @@ MonoBehaviour:
           m_StringArgument: LoadingScene
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 2135642230}
+        m_TargetAssemblyTypeName: PlayerSaveManager, Assembly-CSharp
+        m_MethodName: SaveNewPlayerData
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1828342214
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1912,6 +1924,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2129516817}
   m_CullTransparentMesh: 1
+--- !u!1 &2135642229
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2135642231}
+  - component: {fileID: 2135642230}
+  m_Layer: 0
+  m_Name: SavePlayerData
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2135642230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2135642229}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4fa04c73ddebc9449919d4c0bac00f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+--- !u!4 &2135642231
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2135642229}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 355.73288, y: 434.51968, z: 0.06622091}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &669318316288008531 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3682879178373981156, guid: c46cd5dc172e16f4aa0452c96d4e00d6, type: 3}
@@ -2193,3 +2250,4 @@ SceneRoots:
   - {fileID: 2096004314}
   - {fileID: 6274950534208886205}
   - {fileID: 1201435026}
+  - {fileID: 2135642231}
