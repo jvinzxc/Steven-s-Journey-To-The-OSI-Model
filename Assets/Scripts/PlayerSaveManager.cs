@@ -1,66 +1,79 @@
 using System.IO;
 using UnityEngine;
 using Unity.VisualScripting;
+using UnityEngine.SceneManagement;
 
 public class PlayerSaveManager : MonoBehaviour
 {
-    public PlayerData playerData;
+    public SavePlayer playerData;
     public Transform player;
-
     private Vector3 playerPosition;
     private Quaternion playerRotation;
 
     //bool for loading the data once.
     private bool playerDataLoaded = false;
 
-    void Start()
+
+    private void Awake()
     {
-        if (File.Exists(Application.persistentDataPath + "/playerData.json") && !playerDataLoaded)
+        if (!playerDataLoaded && File.Exists(Application.persistentDataPath + "/playerData.json"))
         {
             LoadPlayerData();
-            playerDataLoaded = true; // Set the flag to true to indicate that data is already loaded
+            playerDataLoaded = true;
+
+        }
+        else
+        {
+            Debug.Log("File not found!");
+        }
+    }
+    void Start()
+    {
+        if (SceneManager.GetActiveScene().name == "Menu")
+        {
+            InvokeRepeating("SavePlayerData", 0f, 1f);
         }
     }
 
     public void SaveNewPlayerData()
     {
-        Vector3 playerNewPos = playerPosition;
-        playerNewPos.y = 4f;
+        //Declare what you want to save, kunin mo ung coordinates ng gusto mong pag respawnan
+        playerData.playerPosition.x = -0.82f;
+        playerData.playerPosition.y = -0.81f;
+        playerData.playerPosition.z = 0f;
 
-        string json = JsonUtility.ToJson(playerData);
+        //Save
+        string json = JsonUtility.ToJson(playerData, true);
         string savePath = Path.Combine(Application.persistentDataPath, "playerData.json");
-
-        // Write the JSON data to a file
         File.WriteAllText(savePath, json);
-        Debug.Log("Saved Player Data");
+        Debug.Log("Saved New Player Data");
     }
 
     public void LoadPlayerData()
     {
         string json = File.ReadAllText(Application.persistentDataPath + "/playerData.json");
-        playerData = JsonUtility.FromJson<PlayerData>(json);
+        playerData = JsonUtility.FromJson<SavePlayer>(json);
 
+        //declare what you want to load "Use the playerData or any data u want always"
         if (player != null)
         {
-            player.transform.position = playerData.playerPosition;
-            player.transform.rotation = playerData.playerRotation;
+            player.position = playerData.playerPosition;
+            player.rotation = playerData.playerRotation;
         }
         Debug.Log("Game Loaded");
     }
-
     //Call When Saving
-    public void SavePlayerData()
+public void SavePlayerData()
     {
         if (player != null)
         {
-            playerData.playerPosition = player.transform.position;
-            playerData.playerRotation = player.transform.rotation;
+            playerData.playerPosition = player.position;
+            playerData.playerRotation = player.rotation;
         }
 
         //Save
-        string json = JsonUtility.ToJson(playerData);
+        string json = JsonUtility.ToJson(playerData, true);
         string savePath = Path.Combine(Application.persistentDataPath, "playerData.json");
         File.WriteAllText(savePath, json);
-        Debug.Log("Saved Player Data");
     }
 }

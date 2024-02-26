@@ -5,10 +5,13 @@ using UnityEngine;
 
 public class Level2PickUpTrigger : MonoBehaviour
 {
-    public GameObject toCollect;
+    public GameObject collectBTN;
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
-        toCollect.SetActive(false);
+        if (collision.CompareTag("Player"))
+        {
+            collectBTN.SetActive(true);
+        }
     }
 }

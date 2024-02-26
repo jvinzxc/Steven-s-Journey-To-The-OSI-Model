@@ -32,7 +32,7 @@ public class Level1PickUpItem : MonoBehaviour
     {
         for (int i = 4; i < toCollect.Length; i++)
         {
-            if (i == 4)
+            if (i == 4) 
             {
                 toCollect[4].gameObject.SetActive(false);
 
@@ -193,7 +193,6 @@ public class Level1PickUpItem : MonoBehaviour
             PlayerPrefs.SetInt("collectedItems", collectedItems);
         }
     }
-
     public void UnhieldedCollected()
     {
         for (int i = 1; i < toCollect.Length; i++)
@@ -249,7 +248,6 @@ public class Level1PickUpItem : MonoBehaviour
             PlayerPrefs.SetInt("collectedItems", collectedItems);
         }
     }
-
     public void ShieldedCollected()
     {
         for(int i = 0; i < toCollect.Length; i++)
@@ -304,5 +302,4 @@ public class Level1PickUpItem : MonoBehaviour
             PlayerPrefs.SetInt("collectedItems", collectedItems);
         }
     }
-    
 }
