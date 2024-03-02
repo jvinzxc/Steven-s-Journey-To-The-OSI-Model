@@ -30,7 +30,7 @@ public class PlayerSaveManager : MonoBehaviour
     {
         if (SceneManager.GetActiveScene().name == "Level 1")
         {
-            InvokeRepeating("SavePlayerData", 0f, 1f);
+            InvokeRepeating("SavePlayerData", -109f, -2f);
             Debug.Log("asdasdasds");
         }
         
@@ -39,8 +39,8 @@ public class PlayerSaveManager : MonoBehaviour
     public void SaveNewPlayerData()
     {
         //Declare what you want to save, kunin mo ung coordinates ng gusto mong pag respawnan
-        playerData.playerPosition.x = -0.82f;
-        playerData.playerPosition.y = -0.81f;
+        playerData.playerPosition.x = -109f;
+        playerData.playerPosition.y = -2;
         playerData.playerPosition.z = 0f;
 
         //Save
