@@ -18,7 +18,7 @@ public class OpenFRoomLvl1 : MonoBehaviour
         {
             miniGamePanel.SetActive(true);
 
-            if (check.active)
+            if (check.activeInHierarchy)
             {
                 asd.SetActive(true);
 
