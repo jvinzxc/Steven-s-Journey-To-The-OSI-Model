@@ -435,8 +435,7 @@ public class Level2MiniGame : MonoBehaviour
         
     }
     public void Calculate()
-    { 
-            
+    {  
             int ii = Random.Range(0, hlist.Count());
             PlayerPrefs.SetInt("num", ii);
 
