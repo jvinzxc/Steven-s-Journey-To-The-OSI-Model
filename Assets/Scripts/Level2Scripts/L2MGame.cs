@@ -9,15 +9,21 @@ public class L2MGame : MonoBehaviour
     public TMP_InputField answerInput;
     public TMP_Text resultText;
     public Button nextButton;
+    public TMP_Text answerInputShow;
+    public TMP_Text score;
 
     public List<int> decimalNumbers = new List<int>();
     private string binaryNumber;
+    private int scr = 0;
 
-    
+
     // Start is called before the first frame update
     void Start()
     {
         GenerateQuestion();
+        answerInputShow.text = "No data received";
+        resultText.text = " ";
+        score.text = "Player Score: 0";
     }
 
     // Generate a random decimal number and set up the question text
@@ -35,28 +41,41 @@ public class L2MGame : MonoBehaviour
         decimalNumbers.RemoveAt(randomIndex);
         binaryNumber = System.Convert.ToString(decimalNumber, 2); // Convert decimal to binary
         questionText.text = "Convert " + decimalNumber + " to binary:";
-        resultText.text = "";
         answerInput.text = "";
     }
 
     // Check the player's answer
     public void CheckAnswer()
     {
-        string playerAnswer = answerInput.text.Trim();
+        string playerAnswer = PlayerPrefs.GetString("ans");
         if (playerAnswer == binaryNumber)
         {
             resultText.text = "Correct!";
             GenerateQuestion();
+            if (scr == 0)
+            {
+                scr = 1;
+                score.text = "Player Score: " + scr.ToString();
+            }
+            else if (scr > 0)
+            {
+                scr++;
+                score.text = "Player Score: " + scr.ToString();
+            }
+            
         }
         else
         {
-            resultText.text = "Incorrect. The correct answer is " + binaryNumber + ".";
+            resultText.text = "Incorrect answer. Try Again!";
         }
     }
 
     // Called when the "Next" button is clicked
     public void NextQuestion()
     {
-        GenerateQuestion();
+        string ansText = answerInput.text.Trim();
+        answerInputShow.text = ansText;
+        PlayerPrefs.SetString("ans", ansText);
+
     }
 }
