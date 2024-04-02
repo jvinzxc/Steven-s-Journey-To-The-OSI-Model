@@ -11,7 +11,7 @@ public class L2MGame : MonoBehaviour
     public Button nextButton;
     public TMP_Text answerInputShow;
     public TMP_Text score;
-
+    public GameObject panel2;
     public List<int> decimalNumbers = new List<int>();
     private string binaryNumber;
     private int scr = 0;
@@ -43,7 +43,13 @@ public class L2MGame : MonoBehaviour
         questionText.text = "Convert " + decimalNumber + " to binary:";
         answerInput.text = "";
     }
-
+    private void Update()
+    {
+      if(scr == 16)
+        {
+            panel2.SetActive(true);
+        }
+    }
     // Check the player's answer
     public void CheckAnswer()
     {

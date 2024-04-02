@@ -12,6 +12,7 @@ public class L2MGamePart2 : MonoBehaviour
     public TMP_Text answerInputShow;
     public TMP_Text score;
     public Button nextButton;
+    public GameObject panel2;
     public List<string> binaryNumbers = new List<string>();
     private string hexadecimalNumber;
     private int scr = 0;
@@ -42,7 +43,13 @@ public class L2MGamePart2 : MonoBehaviour
         questionText.text = "Convert " + binaryNumber + " to hexadecimal:";
         answerInput.text = "";
     }
-
+    public void Update()
+    {
+        if (scr == 16)
+        {
+            panel2.SetActive(true);
+        }
+    }
     // Check the player's answer
     public void CheckAnswer()
     {
