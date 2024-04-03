@@ -6,10 +6,9 @@ using Unity.VisualScripting;
 
 public class Level2PickUpItem : MonoBehaviour
 {
-    [SerializeField] public GameObject[] toCollect;
-    [SerializeField] public GameObject[] check;
-    [SerializeField] public GameObject[] mark;
-    [SerializeField] public GameObject[] fyi;
+     public GameObject[] toCollect;
+     public GameObject[] check;
+     public GameObject[] mark;
 
 
     public TMP_Text text;
@@ -41,13 +40,7 @@ public class Level2PickUpItem : MonoBehaviour
 
                     for (int k = 4; k < mark.Length; k++)
                     {
-
                         mark[4].SetActive(false);
-
-                        for (int l = 4; l < fyi.Length; l++)
-                        {
-                            fyi[4].SetActive(true);
-                        }
                     }
                 }
             }
@@ -96,13 +89,7 @@ public class Level2PickUpItem : MonoBehaviour
 
                     for (int k = 3; k < mark.Length; k++)
                     {
-
                         mark[3].SetActive(false);
-
-                        for (int l = 3; l < fyi.Length; l++)
-                        {
-                            fyi[3].SetActive(true);
-                        }
                     }
                 }
             }
@@ -151,13 +138,7 @@ public class Level2PickUpItem : MonoBehaviour
 
                     for (int k = 2; k < mark.Length; k++)
                     {
-
                         mark[2].SetActive(false);
-
-                        for (int l = 2; l < fyi.Length; l++)
-                        {
-                            fyi[2].SetActive(true);
-                        }
                     }
                 }
             }
@@ -206,13 +187,7 @@ public class Level2PickUpItem : MonoBehaviour
 
                     for (int k = 1; k < mark.Length; k++)
                     {
-
                         mark[1].SetActive(false);
-
-                        for (int l = 1; l < fyi.Length; l++)
-                        {
-                            fyi[1].SetActive(true);
-                        }
                     }
                 }
             }
@@ -261,13 +236,7 @@ public class Level2PickUpItem : MonoBehaviour
 
                     for (int k = 0; k < mark.Length; k++)
                     {
-
                         mark[0].SetActive(false);
-
-                        for (int l = 0; l < fyi.Length; l++)
-                        {
-                            fyi[0].SetActive(true);
-                        }
                     }
                 }
             }
