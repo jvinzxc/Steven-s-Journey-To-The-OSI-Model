@@ -253,6 +253,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 582224666}
+        m_TargetAssemblyTypeName: PlayerSaveManagerLevel2, Assembly-CSharp
+        m_MethodName: LoadPlayerData
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &204643989
 GameObject:
   m_ObjectHideFlags: 0
@@ -621,6 +633,8 @@ GameObject:
   m_Component:
   - component: {fileID: 582224664}
   - component: {fileID: 582224663}
+  - component: {fileID: 582224665}
+  - component: {fileID: 582224666}
   m_Layer: 0
   m_Name: Loader
   m_TagString: Untagged
@@ -655,6 +669,38 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &582224665
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 582224662}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4fa04c73ddebc9449919d4c0bac00f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerData:
+    playerPosition: {x: 0, y: 0, z: 0}
+    playerRotation: {x: 0, y: 0, z: 0, w: 0}
+  player: {fileID: 0}
+--- !u!114 &582224666
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 582224662}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8223804da74208c4da45d386fdf353f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerData:
+    playerPosition: {x: 0, y: 0, z: 0}
+    playerRotation: {x: 0, y: 0, z: 0, w: 0}
+  player: {fileID: 0}
 --- !u!1 &937381641
 GameObject:
   m_ObjectHideFlags: 0
@@ -1909,6 +1955,18 @@ MonoBehaviour:
       - m_Target: {fileID: 582224663}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
         m_MethodName: Level1
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 582224665}
+        m_TargetAssemblyTypeName: PlayerSaveManager, Assembly-CSharp
+        m_MethodName: LoadPlayerData
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
