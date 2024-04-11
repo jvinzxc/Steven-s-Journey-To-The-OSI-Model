@@ -48,6 +48,10 @@ public class PlayerSaveManager : MonoBehaviour
         string savePath = Path.Combine(Application.persistentDataPath, "playerData.json");
         File.WriteAllText(savePath, json);
         Debug.Log("Saved New Player Data");
+
+        //if may save na or wala
+        string snpd = "save!";
+        PlayerPrefs.SetString("snpd", snpd);
     }
 
     public void LoadPlayerData()

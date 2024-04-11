@@ -22,6 +22,20 @@ public class MainMenu : MonoBehaviour
         
     }
 
+    public void HouseDoneUnlocked()
+    {
+
+        int levelsUnlocked = 1;
+        PlayerPrefs.SetInt("levelsUnlocked", levelsUnlocked);
+        bool houseDone = true;
+
+        if(houseDone == true)
+        {
+            int updatedlvl = PlayerPrefs.GetInt("levelsUnlocked");
+            PlayerPrefs.SetInt("levelsUnlocked", updatedlvl);
+        }
+    }
+
     public void GotoMainMenu()
     {
         string sceneName = "Menu";

@@ -57,6 +57,7 @@ Library: A:\Unity\Capstone 2023\Steven's Journey To The OSI Model\Temp\BurstOutp
 --assembly-defines=UnityEngine;
 --generate-link-xml=Temp\burst.link.xml
 --temp-folder=A:\Unity\Capstone 2023\Steven's Journey To The OSI Model\Temp\Burst
+--debug=Full
 --key-folder=A:/Unity/2023.1.17f1/Editor/Data/PlaybackEngines/AndroidPlayer
 --decode-folder=A:\Unity\Capstone 2023\Steven's Journey To The OSI Model\Library\Burst
 --output=A:\Unity\Capstone 2023\Steven's Journey To The OSI Model\Temp\BurstOutput\tempburstlibs\armeabi-v7a\lib_burst_generated

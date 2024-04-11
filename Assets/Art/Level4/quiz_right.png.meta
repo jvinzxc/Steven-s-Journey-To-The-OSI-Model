@@ -140,7 +140,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      quiz_right_0: -4622602373701534441
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
