@@ -7,6 +7,7 @@ public class BinaryGameTrigger : MonoBehaviour
     //public GameObject jstick;
     public GameObject bGame1;
     public GameObject bGameTrigger;
+    public GameObject jstck;
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
@@ -14,6 +15,7 @@ public class BinaryGameTrigger : MonoBehaviour
         {
             bGame1.SetActive(true);
             bGameTrigger.SetActive(false);
+            jstck.SetActive(false);
         }
     }
 }
