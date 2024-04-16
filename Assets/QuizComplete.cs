@@ -10,6 +10,7 @@ public class QuizComplete : MonoBehaviour
     public GameObject panel;
     public GameObject asd;
     public GameObject check;
+    public GameObject jstick;
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
@@ -21,7 +22,7 @@ public class QuizComplete : MonoBehaviour
             {
                 check.SetActive(true);
 
-                if (check.active)
+                if (check.activeSelf)
                 {
                     asd.SetActive(true);
 
@@ -49,13 +50,15 @@ public class QuizComplete : MonoBehaviour
                 door2.SetActive(false);
                 doorTrigger.SetActive(false);
                 panel.SetActive(true);
+            jstick.SetActive(true);
             }
             else
-            {
+            { 
                 doorTrigger.SetActive(true);
                 panel.SetActive(false);
                 doorBlock.SetActive(true);
                 door2.SetActive(true);
+                jstick.SetActive(true);
             }
         
     }
