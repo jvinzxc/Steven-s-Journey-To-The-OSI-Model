@@ -11,7 +11,6 @@ public class PlayerSaveManager : MonoBehaviour
     //bool for loading the data once.
     private bool playerDataLoaded = false;
 
-
     private void Awake()
     {
         if (!playerDataLoaded && File.Exists(Application.persistentDataPath + "/playerData.json"))
@@ -42,6 +41,7 @@ public class PlayerSaveManager : MonoBehaviour
         playerData.playerPosition.x = -109f;
         playerData.playerPosition.y = -2;
         playerData.playerPosition.z = 0f;
+        
 
         //Save
         string json = JsonUtility.ToJson(playerData, true);
@@ -68,7 +68,7 @@ public class PlayerSaveManager : MonoBehaviour
         Debug.Log("Game Loaded");
     }
     //Call When Saving
-public void SavePlayerData()
+    public void SavePlayerData()
     {
         if (player != null)
         {

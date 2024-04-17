@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BinaryGameTrigger : MonoBehaviour
 {
-    //public GameObject jstick;
+    
     public GameObject bGame1;
     public GameObject bGameTrigger;
     public GameObject jstck;
