@@ -48,8 +48,10 @@ public class L2MGamePart2 : MonoBehaviour
         if (scr == 16)
         {
             panel2.SetActive(true);
+            
         }
     }
+   
     // Check the player's answer
     public void CheckAnswer()
     {

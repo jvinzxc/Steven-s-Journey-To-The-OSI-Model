@@ -27,6 +27,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Level 2.unity
     guid: 8e17a814c32198346b16ba748ac63f63
   - enabled: 1
+    path: Assets/Scenes/Quiz 2.unity
+    guid: 40b2924cf9b8e5948b39d6ba93dde6d9
+  - enabled: 1
     path: Assets/Scenes/Level 3.unity
     guid: 5e02880a1880d7f4abcf9e947d49de1e
   - enabled: 1

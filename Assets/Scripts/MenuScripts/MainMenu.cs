@@ -71,6 +71,17 @@ public class MainMenu : MonoBehaviour
         PlayerPrefs.SetString("SceneName", sceneName);
         SceneManager.LoadScene("LoadingScene");
     }
+    public void Level2Quiz()
+    {
+        string sceneName = "Quiz 2";
+        PlayerPrefs.SetString("SceneName", sceneName);
+        SceneManager.LoadSceneAsync("Quiz 2", LoadSceneMode.Additive);
+    }
+    public void Level2QuizDone()
+    {
+        string l2mgp2 = "done";
+        PlayerPrefs.SetString("l2mgp2", l2mgp2);
+    }
 
     public void Level3()
     {
