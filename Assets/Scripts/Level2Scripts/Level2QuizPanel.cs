@@ -5,7 +5,7 @@ using UnityEngine;
 public class Level2QuizPanel : MonoBehaviour
 {
     public GameObject quizPanel;
-    public GameObject qr;
+    
 
     public void OnTriggerEnter2D(Collider2D collision)
     {
@@ -17,10 +17,7 @@ public class Level2QuizPanel : MonoBehaviour
             {
                 quizPanel.SetActive(true);
             }
-            else
-            {
-                qr.SetActive(true);
-            }
+            
         }
     }
 

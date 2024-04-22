@@ -55,6 +55,8 @@ public class QuestionManagerLevel2 : MonoBehaviour
             string quizDone2 = "done";
             PlayerPrefs.SetString("done2", quizDone2);
             PlayerPrefs.SetInt("score2", score);
+            string l2q = "done";
+            PlayerPrefs.SetString("l2quiz", l2q);
             SceneManager.UnloadSceneAsync("Quiz 2");
 
 
