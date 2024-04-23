@@ -894,8 +894,20 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 396813940}
     - target: {fileID: 222490870984027008, guid: 88f7379caeae9f64f81e831befdda191, type: 3}
+      propertyPath: 'qna.Array.data[0].answer.Array.data[3]'
+      value: D. Reduce overall cost.
+      objectReference: {fileID: 0}
+    - target: {fileID: 222490870984027008, guid: 88f7379caeae9f64f81e831befdda191, type: 3}
       propertyPath: 'qna.Array.data[5].answer.Array.data[3]'
       value: D. Cat5a.
+      objectReference: {fileID: 0}
+    - target: {fileID: 222490870984027008, guid: 88f7379caeae9f64f81e831befdda191, type: 3}
+      propertyPath: 'qna.Array.data[7].answer.Array.data[0]'
+      value: A. USB and audio connections.
+      objectReference: {fileID: 0}
+    - target: {fileID: 222490870984027008, guid: 88f7379caeae9f64f81e831befdda191, type: 3}
+      propertyPath: 'qna.Array.data[8].answer.Array.data[3]'
+      value: D. Transmitting low-frequency signals.
       objectReference: {fileID: 0}
     - target: {fileID: 1255442839060374406, guid: 88f7379caeae9f64f81e831befdda191, type: 3}
       propertyPath: m_SortingOrder

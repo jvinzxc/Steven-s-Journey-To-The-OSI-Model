@@ -21,24 +21,19 @@ public class QuizComplete : MonoBehaviour
             if (score == 10)
             {
                 check.SetActive(true);
-
-                if (check.activeSelf)
-                {
-                    asd.SetActive(true);
-
-                    if (asd.activeInHierarchy)
-                    {
-                        doorBlock.SetActive(false);
-                        door2.SetActive(false);
-                        doorTrigger.SetActive(false);
-                    }
-                }
-                else
-                {
-                    doorTrigger.SetActive(true);
-                }
             }
-            
+            if (check.activeInHierarchy)
+            {
+                doorBlock.SetActive(false);
+                door2.SetActive(false);
+                doorTrigger.SetActive(false);
+
+            }
+            else
+            {
+                doorTrigger.SetActive(true);
+            }
+
         }
     }
     public void IDK()

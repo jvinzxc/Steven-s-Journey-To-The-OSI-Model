@@ -495,9 +495,9 @@ MonoBehaviour:
   - question: What is the hexadecimal equivalent of the binary number 1010?
     answer:
     - A.
-    - B.
-    - C.
     - D.
+    - E.
+    - F.
     correctAnswer: 1
   - question: What does NIC stand for in networking?
     answer:
