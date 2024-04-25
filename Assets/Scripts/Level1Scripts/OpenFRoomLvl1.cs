@@ -1,4 +1,4 @@
-using System.Collections;
+ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -33,7 +33,7 @@ public class OpenFRoomLvl1 : MonoBehaviour
             else
             {
                 quizGameTrigger.SetActive(true);
-            }    
-        }       
+            }
+        }
     }   
 }

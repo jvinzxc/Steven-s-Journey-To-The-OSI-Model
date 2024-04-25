@@ -20,10 +20,10 @@ public class QuestionManager : MonoBehaviour
 
     public GameObject quiz1;
     public GameObject quizRetry;
-    public TMP_Text playerScore1;
-    public TMP_Text playerScore2;
-    public TMP_Text messageDone1;
-    public TMP_Text messageDone2;
+    public Text playerScore1;
+    public Text playerScore2;
+    public Text messageDone1;
+    public Text messageDone2;
 
     
     
