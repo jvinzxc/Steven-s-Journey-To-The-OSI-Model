@@ -9,7 +9,7 @@ public class PlayerMovement : MonoBehaviour
     public Animator anim;
     public float moveSpeed;
     public float x, y;
-    private bool isWalking;
+    public bool isWalking;
 
     private Vector3 moveDir;
 
@@ -57,7 +57,7 @@ public class PlayerMovement : MonoBehaviour
         rb.velocity = moveDir * moveSpeed * Time.deltaTime;
     }
 
-    private void StopMoving()
+    public void StopMoving()
     {
         rb.velocity = Vector3.zero;
     }
