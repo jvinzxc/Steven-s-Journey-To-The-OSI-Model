@@ -10,9 +10,7 @@ public class PlayerMovement : MonoBehaviour
     public float moveSpeed;
     public float x, y;
     public bool isWalking;
-
-    private Vector3 moveDir;
-
+    private Vector2 moveDir;
     public FixedJoystick joystick;
 
     private void Start()
@@ -27,7 +25,7 @@ public class PlayerMovement : MonoBehaviour
 
         float x = joystick.Horizontal;
         float y = joystick.Vertical;
-
+        
         if (x != 0 || y != 0)
         {
             anim.SetFloat("X", x);
@@ -37,6 +35,7 @@ public class PlayerMovement : MonoBehaviour
             {
                 isWalking = true;
                 anim.SetBool("IsMoving", isWalking);
+                
             }
         }
         else
@@ -54,12 +53,12 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        rb.velocity = moveDir * moveSpeed * Time.deltaTime;
+        rb.velocity =  moveSpeed * Time.deltaTime * moveDir;
     }
 
     public void StopMoving()
     {
-        rb.velocity = Vector3.zero;
+        rb.velocity = Vector2.zero;
     }
     
 }

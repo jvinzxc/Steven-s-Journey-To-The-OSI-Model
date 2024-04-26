@@ -10,7 +10,6 @@ public class StopJoystick : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // Check if the button is clicked
         if (Input.GetButtonDown("Pause"))
         {
             // Toggle pause state

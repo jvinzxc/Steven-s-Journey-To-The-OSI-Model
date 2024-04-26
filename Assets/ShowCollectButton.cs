@@ -6,7 +6,7 @@ public class ShowCollectButton : MonoBehaviour
 {
     public GameObject showButton;
     public GameObject hidejstick;
-
+    public StopJoystick sj;
     public void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
@@ -15,6 +15,12 @@ public class ShowCollectButton : MonoBehaviour
             PlayerMovement player = collision.GetComponent<PlayerMovement>();
             
             hidejstick.SetActive(false);
+
+            if (!hidejstick.activeSelf)
+            {
+                Time.timeScale = 0;
+                sj.TogglePause();
+            }
         }
     }
 }

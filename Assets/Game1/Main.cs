@@ -37,8 +37,6 @@ public class Main : MonoBehaviour
             activator.SetActive(true);
             bM.SetActive(true);
             sM.SetActive(true);
-
-            check.SetActive(true);
            
         }
     }
