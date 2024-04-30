@@ -29,23 +29,23 @@ public class Level1AlmanacCollect : MonoBehaviour
     public void UnshieldedCollected()
     {
         string uscollect = "uscollect";
-        PlayerPrefs.SetString("scollect", uscollect);
+        PlayerPrefs.SetString("uscollect", uscollect);
     }
 
     public void CoaxialCollected()
     {
         string ccollect = "ccollect";
-        PlayerPrefs.SetString("scollect", ccollect);
+        PlayerPrefs.SetString("ccollect", ccollect);
     }
     public void Rj45Collected()
     {
         string rcollect = "rcollect";
-        PlayerPrefs.SetString("scollect", rcollect);
+        PlayerPrefs.SetString("rcollect", rcollect);
     }
     public void FiberOpticCollected()
     {
         string fcollect = "fcollect";
-        PlayerPrefs.SetString("scollect", fcollect);
+        PlayerPrefs.SetString("fcollect", fcollect);
     }
     public void Update()
     {
