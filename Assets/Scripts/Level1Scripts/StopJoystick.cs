@@ -10,11 +10,9 @@ public class StopJoystick : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetButtonDown("Pause"))
-        {
-            // Toggle pause state
+        
             TogglePause();
-        }
+     
     }
 
     // Function to toggle pause state
@@ -24,16 +22,12 @@ public class StopJoystick : MonoBehaviour
         if (Time.timeScale == 0)
         {
             // Unpause the game
-            Time.timeScale = 1;
-            // Activate the pause button again
-            pauseButton.SetActive(true);
+            Time.timeScale = 1; 
         }
         else
         {
             // Pause the game
             Time.timeScale = 0;
-            // Deactivate the pause button
-            pauseButton.SetActive(false);
         }
     }
 }

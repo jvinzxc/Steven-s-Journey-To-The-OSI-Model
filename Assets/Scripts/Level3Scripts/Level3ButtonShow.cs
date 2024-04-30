@@ -25,4 +25,10 @@ public class Level3ButtonShow : MonoBehaviour
             jstop.TogglePause();
         }
     }
+
+    public void UnpauseToggle()
+    {
+        Time.timeScale = 1;
+        jstop.TogglePause();
+    }
 }
