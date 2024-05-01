@@ -65,7 +65,8 @@ public class QuestionManagerLevel3 : MonoBehaviour
         {
             questionPanel.SetActive(false);
             quizRetry.SetActive(true);
-            messageDone2.text = score + "/" + totalQuestion;
+            playerScore2.text = score + "/" + totalQuestion;
+            messageDone2.text = "retry";
             StartCoroutine(myCoroutine());
 
         }
@@ -93,11 +94,11 @@ public class QuestionManagerLevel3 : MonoBehaviour
     {
         for (int i = 0; i < options.Length; i++)
         {
-            options[i].GetComponent<AnsScriptsLevel2>().isCorrect = false;
+            options[i].GetComponent<AnsScriptsLevel3>().isCorrect = false;
             options[i].transform.GetChild(0).GetComponent<Text>().text = qna[currentQuestions].answer[i];
             if (qna[currentQuestions].correctAnswer == i + 1)
             {
-                options[i].GetComponent<AnsScriptsLevel2>().isCorrect = true;
+                options[i].GetComponent<AnsScriptsLevel3>().isCorrect = true;
             }
         }
     }

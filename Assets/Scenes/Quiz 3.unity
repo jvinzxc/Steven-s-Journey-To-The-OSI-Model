@@ -631,6 +631,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: ReRe (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7713095817905905545, guid: 674eb40ceb9521e40a02cde3ce6ab642, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9154308407725907889, guid: 674eb40ceb9521e40a02cde3ce6ab642, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1402,9 +1410,13 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2313724291599210605, guid: 88f7379caeae9f64f81e831befdda191, type: 3}
+      propertyPath: qManager
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 2354477938570347277, guid: 88f7379caeae9f64f81e831befdda191, type: 3}
       propertyPath: m_Name
-      value: QuestionManagerLevel2
+      value: QuestionManagerLevel3
       objectReference: {fileID: 0}
     - target: {fileID: 2443406309806166204, guid: 88f7379caeae9f64f81e831befdda191, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1688,15 +1700,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6003615535529349498, guid: 88f7379caeae9f64f81e831befdda191, type: 3}
       propertyPath: m_Colors.m_PressedColor.b
-      value: 0.16037977
+      value: 0.21219681
       objectReference: {fileID: 0}
     - target: {fileID: 6003615535529349498, guid: 88f7379caeae9f64f81e831befdda191, type: 3}
       propertyPath: m_Colors.m_PressedColor.g
-      value: 0.2830189
+      value: 0.3584906
       objectReference: {fileID: 0}
     - target: {fileID: 6003615535529349498, guid: 88f7379caeae9f64f81e831befdda191, type: 3}
       propertyPath: m_Colors.m_PressedColor.r
-      value: 0.14551443
+      value: 0.19446424
       objectReference: {fileID: 0}
     - target: {fileID: 6003615535529349498, guid: 88f7379caeae9f64f81e831befdda191, type: 3}
       propertyPath: m_Colors.m_SelectedColor.b
@@ -1778,6 +1790,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 1.2971
       objectReference: {fileID: 0}
+    - target: {fileID: 6135623156193584281, guid: 88f7379caeae9f64f81e831befdda191, type: 3}
+      propertyPath: qManager
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 6179545781022708203, guid: 88f7379caeae9f64f81e831befdda191, type: 3}
       propertyPath: qManager
       value: 
@@ -1858,6 +1874,10 @@ PrefabInstance:
       propertyPath: m_FontData.m_Font
       value: 
       objectReference: {fileID: 12800000, guid: e516f33abec13d64c96e60a8e23e4376, type: 3}
+    - target: {fileID: 7822215482883187248, guid: 88f7379caeae9f64f81e831befdda191, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 7974595439962708092, guid: 88f7379caeae9f64f81e831befdda191, type: 3}
       propertyPath: m_IsActive
       value: 0

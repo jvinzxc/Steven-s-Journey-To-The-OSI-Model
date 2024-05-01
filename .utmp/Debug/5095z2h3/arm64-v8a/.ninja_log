@@ -1,9 +1,0 @@
-# ninja log v5
-0	196	7208745463412804	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	2899c56b2a6d379d
-198	367	7208745464558779	A:/Unity/Capstone 2023/Steven's Journey To The OSI Model/Library/PramData/AndroidApplicationController/Cache/com.DefaultCompany.com.unity.template.mobile2D/gradle-project/unityLibrary/build/intermediates/cxx/Debug/5095z2h3/obj/arm64-v8a/libswappywrapper.so	640d87f063a6c46b
-2	524	7208749050629007	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	2899c56b2a6d379d
-525	872	7208749052528560	A:/Unity/Capstone 2023/Steven's Journey To The OSI Model/Library/PramData/AndroidApplicationController/Cache/com.DefaultCompany.com.unity.template.mobile2D/gradle-project/unityLibrary/build/intermediates/cxx/Debug/5095z2h3/obj/arm64-v8a/libswappywrapper.so	640d87f063a6c46b
-2	3147	7209669550746261	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	2899c56b2a6d379d
-3147	5185	7209669568683142	A:/Unity/Capstone 2023/Steven's Journey To The OSI Model/Library/PramData/AndroidApplicationController/Cache/com.DefaultCompany.com.unity.template.mobile2D/gradle-project/unityLibrary/build/intermediates/cxx/Debug/5095z2h3/obj/arm64-v8a/libswappywrapper.so	640d87f063a6c46b
-2	182	7209685400777268	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	2899c56b2a6d379d
-183	406	7209685402293946	A:/Unity/Capstone 2023/Steven's Journey To The OSI Model/Library/PramData/AndroidApplicationController/Cache/com.DefaultCompany.com.unity.template.mobile2D/gradle-project/unityLibrary/build/intermediates/cxx/Debug/5095z2h3/obj/arm64-v8a/libswappywrapper.so	640d87f063a6c46b

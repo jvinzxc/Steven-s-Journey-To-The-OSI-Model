@@ -1,5 +1,0 @@
-A:/Unity/Capstone 2023/Steven's Journey To The OSI Model/.utmp/RelWithDebInfo/202er3x6/armeabi-v7a/CMakeFiles/edit_cache.dir
-A:/Unity/Capstone 2023/Steven's Journey To The OSI Model/.utmp/RelWithDebInfo/202er3x6/armeabi-v7a/CMakeFiles/rebuild_cache.dir
-A:/Unity/Capstone 2023/Steven's Journey To The OSI Model/.utmp/RelWithDebInfo/202er3x6/armeabi-v7a/FramePacing/CMakeFiles/swappywrapper.dir
-A:/Unity/Capstone 2023/Steven's Journey To The OSI Model/.utmp/RelWithDebInfo/202er3x6/armeabi-v7a/FramePacing/CMakeFiles/edit_cache.dir
-A:/Unity/Capstone 2023/Steven's Journey To The OSI Model/.utmp/RelWithDebInfo/202er3x6/armeabi-v7a/FramePacing/CMakeFiles/rebuild_cache.dir

@@ -9,16 +9,22 @@ public class ShowMiniGame1 : MonoBehaviour
     public GameObject prevCam;
     public GameObject nextCam;
     public GameObject wiremark;
+    public GameObject minigamepanel;
     public void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
         {
             
-            prevCam.SetActive(false);
-            wiremark.SetActive(false);
-            nextLev.SetActive(true);
-            nextCam.SetActive(true);
+            minigamepanel.SetActive(true);
           
         }
+    }
+
+    public void Minigame1()
+    {
+        prevCam.SetActive(false);
+        wiremark.SetActive(false);
+        nextLev.SetActive(true);
+        nextCam.SetActive(true);
     }
 }

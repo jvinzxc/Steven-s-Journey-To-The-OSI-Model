@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using Unity.VisualScripting;
+using UnityEngine.UI;
 
 public class Level2PickUpItem : MonoBehaviour
 {
@@ -11,7 +12,7 @@ public class Level2PickUpItem : MonoBehaviour
      public GameObject[] mark;
 
 
-    public TMP_Text text;
+    public Text text;
     private int collectedItems2 = 0;
 
     public void Update()
