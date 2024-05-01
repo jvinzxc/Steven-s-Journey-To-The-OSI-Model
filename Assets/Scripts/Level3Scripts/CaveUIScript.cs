@@ -12,7 +12,10 @@ public class CaveUIScript : MonoBehaviour
 
     void Start()
     {
-        Update();
+        cave1.SetActive(true);
+        cave2.SetActive(false);
+        cave3.SetActive(false);
+        cave4.SetActive(false);
     }
     void Update()
     {

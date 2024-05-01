@@ -11,12 +11,12 @@ public class StopJoystick : MonoBehaviour
     void Update()
     {
         
-            TogglePause();
+            CheckTogglePause();
      
     }
 
     // Function to toggle pause state
-     public void TogglePause()
+     public void CheckTogglePause()
     {
         // Check if the game is currently paused
         if (Time.timeScale == 0)
@@ -29,5 +29,14 @@ public class StopJoystick : MonoBehaviour
             // Pause the game
             Time.timeScale = 0;
         }
+    }
+
+    public void ToggleUnpause() 
+    {
+        Time.timeScale = 1;
+    }
+    public void TogglePause()
+    {
+        Time.timeScale = 0;
     }
 }
